@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KEISO // DESENVOLVEDOR DE SOFTWARE</title>
+  <meta name="description" content="Portfólio de Keyrrison 'Keiso' Costa — desenvolvedor de software." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Crect x='12' y='28' width='76' height='48' fill='%23fff' stroke='%23000' stroke-width='4'/%3E%3Ccircle cx='78' cy='20' r='6' fill='%23fff'/%3E%3Cline x1='30' y1='22' x2='50' y2='4' stroke='%23fff' stroke-width='4'/%3E%3Cline x1='70' y1='22' x2='50' y2='4' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <header class="tv-bar">
+    <div class="tv-bar__brand">
+      <span class="tv-bar__logo">KEISO<span class="blink">_</span></span>
+      <span class="tv-bar__channel">CH 01</span>
+    </div>
+    <div class="tv-bar__status">
+      <span class="dot"></span>
+      AO VIVO
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Alternar modo escuro">
+        ☾ MODO NOITE
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__static" aria-hidden="true"></div>
+      <p class="hero__eyebrow">TRANSMISSÃO AO VIVO — KEISO.TV</p>
+      <h1 class="hero__title">KEYRRISON<br />"KEISO" COSTA</h1>
+      <p class="hero__role">DESENVOLVEDOR DE SOFTWARE</p>
+      <p class="hero__tagline"><span id="typewriter"></span><span class="cursor">|</span></p>
+      <a href="#projetos" class="btn btn--block hero__cta">LIGAR NA VITRINE ↓</a>
+    </section>
+
+    <section class="shelf-section" id="projetos" data-shelf="projetos">
+      <div class="shelf-header">
+        <h2 class="shelf-title">PROJETOS</h2>
+        <p class="shelf-subtitle">CORREDOR 01 — ARRASTE PRA VER MAIS</p>
+      </div>
+      <div class="shelf" role="list"></div>
+    </section>
+
+    <section class="shelf-section" id="redes" data-shelf="redes">
+      <div class="shelf-header">
+        <h2 class="shelf-title">REDES</h2>
+        <p class="shelf-subtitle">CORREDOR 02 — ONDE ME ENCONTRAR</p>
+      </div>
+      <div class="shelf" role="list"></div>
+    </section>
+
+    <section class="shelf-section" id="contato" data-shelf="contato">
+      <div class="shelf-header">
+        <h2 class="shelf-title">CONTATO</h2>
+        <p class="shelf-subtitle">CORREDOR 03 — BALCÃO DE ATENDIMENTO</p>
+      </div>
+      <div class="shelf" role="list"></div>
+    </section>
+  </main>
+
+  <footer class="tv-footer">
+    <p>© <span id="year"></span> KEISO — SINAL TRANSMITIDO DO BRASIL</p>
+    <p class="tv-footer__small">FEITO NO OLHO, COM HTML, CSS E JS <span class="blink">_</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
