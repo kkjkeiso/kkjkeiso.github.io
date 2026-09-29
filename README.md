@@ -17,7 +17,7 @@ Todo o conteúdo das prateleiras vive num único objeto chamado `CONFIG`, no top
 
 Pra deixar um card como "em breve", sem link clicável, basta omitir o `href` e adicionar `disabled: true`.
 
-Como é um site inteiramente estático, sem `fetch`, módulos JS ou qualquer coisa que dependa de servidor, dá pra abrir o `index.html` direto no navegador e todas as funcionalidades funcionam normalmente. Ainda assim, rodar por um servidor local simples é uma boa prática, porque reproduz com mais fidelidade o jeito como o GitHub Pages serve os arquivos de verdade — caminhos relativos e, principalmente, a sensibilidade a maiúsculas/minúsculas do sistema de arquivos do servidor, que costuma ser diferente da máquina local:
+Como é um site inteiramente estático, sem `fetch`, módulos JS ou qualquer coisa que dependa de servidor, basta abrir o `index.html` direto no navegador — todas as funcionalidades, incluindo o modo escuro, funcionam normalmente. Se quiser simular com mais fidelidade o jeito como o GitHub Pages serve os arquivos de verdade (caminhos relativos e a sensibilidade a maiúsculas/minúsculas do sistema de arquivos do servidor), rodar por um servidor local simples é opcional:
 
 ```bash
 python3 -m http.server 3000
@@ -48,7 +48,7 @@ All of the shelf content lives in a single `CONFIG` object at the top of `script
 
 To leave a card as "coming soon", with no clickable link, just omit `href` and add `disabled: true`.
 
-Since this is a fully static site with no `fetch` calls, JS modules, or anything depending on a server, opening `index.html` directly in a browser works fine and every feature behaves normally. Still, serving it through a simple local server is good practice, since it more closely mirrors how GitHub Pages actually serves the files — relative paths, and especially the server's case-sensitive filesystem, which usually behaves differently from a local machine:
+Since this is a fully static site with no `fetch` calls, JS modules, or anything depending on a server, just open `index.html` directly in a browser — every feature, including dark mode, behaves normally. If you'd rather more closely mirror how GitHub Pages actually serves the files (relative paths and the server's case-sensitive filesystem), serving it through a simple local server is optional:
 
 ```bash
 python3 -m http.server 3000
