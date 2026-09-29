@@ -109,8 +109,8 @@ const CONFIG = {
       {
         glyph: 'IG',
         tag: 'INSTAGRAM',
-        title: 'DIRECT NO INSTAGRAM',
-        desc: 'Prefere por lá? Envie um direct para @keisodev e peça seu orçamento.',
+        title: 'DIRECT',
+        desc: 'Prefere pelo instagram? Envie um direct para @keisodev e faça já seu orçamento.',
         label: 'ABRIR DIRECT →',
         href: 'https://ig.me/m/keisodev',
       },

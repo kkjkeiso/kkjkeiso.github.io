@@ -261,6 +261,10 @@ body {
   padding: 3rem 0 3.5rem;
 }
 
+#projetos.shelf-section {
+  padding-top: calc(var(--header-height, 88px) + 0.5rem);
+}
+
 .shelf-header {
   padding: 0 1.5rem;
   margin-bottom: 1.75rem;
