@@ -294,6 +294,15 @@ body {
   scrollbar-color: var(--black) var(--white);
 }
 
+/* Em telas de toque o scroll-snap durante o gesto é inconsistente entre
+   navegadores e gruda o card na borda no meio do arraste — desativado
+   só pra ponteiros grosseiros (dedo); no mouse o snap continua. */
+@media (hover: none) and (pointer: coarse) {
+  .shelf {
+    scroll-snap-type: none;
+  }
+}
+
 .shelf:active {
   cursor: grabbing;
 }
