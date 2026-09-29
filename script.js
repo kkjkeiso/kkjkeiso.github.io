@@ -173,15 +173,14 @@ function enableDragScroll(shelfEl) {
     isDown = false;
   };
 
+  // Só no mouse: touch já tem scroll nativo do navegador (com snap e
+  // momentum próprios) — aplicar scrollLeft manual junto com ele é o que
+  // causava aquele "flick" no celular, os dois brigando pela mesma rolagem.
   shelfEl.addEventListener('mousedown', (e) => onDown(e.pageX));
   window.addEventListener('mousemove', (e) => onMove(e.pageX));
   window.addEventListener('mouseup', onUp);
 
-  shelfEl.addEventListener('touchstart', (e) => onDown(e.touches[0].pageX), { passive: true });
-  shelfEl.addEventListener('touchmove', (e) => onMove(e.touches[0].pageX), { passive: true });
-  shelfEl.addEventListener('touchend', onUp);
-
-  // Evita clique fantasma em links depois de arrastar
+  // Evita clique fantasma em links depois de arrastar com o mouse
   shelfEl.addEventListener(
     'click',
     (e) => {
