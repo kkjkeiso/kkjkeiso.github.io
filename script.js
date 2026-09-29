@@ -1,7 +1,3 @@
-/*
- * Conteúdo da vitrine. Edite os arrays abaixo pra adicionar/trocar itens —
- * cada shelf (projetos, redes, contato) vira uma prateleira que rola na horizontal.
- */
 const CONFIG = {
   taglines: [
     'DESENVOLVENDO DIA APÓS DIA',
@@ -173,14 +169,10 @@ function enableDragScroll(shelfEl) {
     isDown = false;
   };
 
-  // Só no mouse: touch já tem scroll nativo do navegador (com snap e
-  // momentum próprios) — aplicar scrollLeft manual junto com ele é o que
-  // causava aquele "flick" no celular, os dois brigando pela mesma rolagem.
   shelfEl.addEventListener('mousedown', (e) => onDown(e.pageX));
   window.addEventListener('mousemove', (e) => onMove(e.pageX));
   window.addEventListener('mouseup', onUp);
 
-  // Evita clique fantasma em links depois de arrastar com o mouse
   shelfEl.addEventListener(
     'click',
     (e) => {

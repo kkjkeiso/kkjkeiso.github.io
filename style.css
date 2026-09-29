@@ -1,7 +1,6 @@
 :root {
   --black: #000;
   --white: #fff;
-  --gray-a: #1a1a1a;
   --gray-b: #cfcfcf;
   --scan-color: rgba(0, 0, 0, 0.06);
   --vignette-color: rgba(0, 0, 0, 0.35);
@@ -14,7 +13,6 @@
 :root[data-theme='dark'] {
   --black: #fff;
   --white: #000;
-  --gray-a: #e6e6e6;
   --gray-b: #3a3a3a;
   --scan-color: rgba(255, 255, 255, 0.07);
   --vignette-color: rgba(255, 255, 255, 0.22);
@@ -42,8 +40,6 @@ body {
   background: var(--black);
   color: var(--white);
 }
-
-/* ---------- CRT overlay (sutil) ---------- */
 
 .crt-overlay {
   pointer-events: none;
@@ -76,8 +72,6 @@ body {
   98% { opacity: 1; }
 }
 
-/* ---------- Blinking bits ---------- */
-
 .blink {
   animation: blink 1.1s steps(1) infinite;
 }
@@ -95,8 +89,6 @@ body {
   border-radius: 50%;
   animation: blink 1.4s steps(1) infinite;
 }
-
-/* ---------- Neo-brutalist primitives ---------- */
 
 .btn {
   display: inline-block;
@@ -129,8 +121,6 @@ body {
   display: block;
   width: fit-content;
 }
-
-/* ---------- Header ---------- */
 
 .tv-bar {
   position: sticky;
@@ -188,8 +178,6 @@ body {
   background: var(--black);
   color: var(--white);
 }
-
-/* ---------- Hero ---------- */
 
 .hero {
   position: relative;
@@ -254,8 +242,6 @@ body {
   animation: blink 0.9s steps(1) infinite;
 }
 
-/* ---------- Shelves (vitrine estilo locadora) ---------- */
-
 .shelf-section {
   border-bottom: var(--border) solid var(--black);
   padding: 3rem 0 3.5rem;
@@ -294,9 +280,6 @@ body {
   scrollbar-color: var(--black) var(--white);
 }
 
-/* Em telas de toque o scroll-snap durante o gesto é inconsistente entre
-   navegadores e gruda o card na borda no meio do arraste — desativado
-   só pra ponteiros grosseiros (dedo); no mouse o snap continua. */
 @media (hover: none) and (pointer: coarse) {
   .shelf {
     scroll-snap-type: none;
@@ -319,8 +302,6 @@ body {
 .shelf::-webkit-scrollbar-thumb {
   background: var(--black);
 }
-
-/* Tape card (estilo capa de VHS) */
 
 .tape {
   flex: 0 0 auto;
@@ -420,8 +401,6 @@ body {
   );
 }
 
-/* ---------- Footer ---------- */
-
 .tv-footer {
   padding: 2rem 1.5rem;
   text-align: center;
@@ -448,8 +427,6 @@ body {
   40%, 100% { opacity: 1; }
 }
 
-/* ---------- Responsivo ---------- */
-
 @media (max-width: 640px) {
   .tape {
     width: 62vw;
@@ -460,7 +437,6 @@ body {
   }
 }
 
-/* Respeita quem prefere menos movimento */
 @media (prefers-reduced-motion: reduce) {
   .blink,
   .dot,
