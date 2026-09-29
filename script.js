@@ -18,7 +18,7 @@ const CONFIG = {
         title: 'ÓTICAS GOMES',
         desc: 'Website desenvolvido para as Óticas Gomes - RN',
         label: 'VER WEBSITE →',
-        href: 'httPS://kkjkeiso.github.io/oticas-gomes'
+        href: 'https://kkjkeiso.github.io/oticas-gomes'
       },
       {
         glyph: '02',
@@ -95,14 +95,6 @@ const CONFIG = {
         label: 'SEGUIR →',
         href: 'https://x.com/kkjkeiso',
       },
-      {
-        glyph: '??',
-        tag: 'EM BREVE',
-        title: 'NOVA REDE',
-        desc: 'Espaço reservado para redes adicionais, como Instagram, X ou LinkedIn.',
-        label: 'EM BREVE',
-        disabled: true,
-      },
     ],
 
     contato: [
@@ -113,6 +105,14 @@ const CONFIG = {
         desc: 'Resposta mais rápida. Peça seu orçamento de site ou sistema por aqui.',
         label: 'ORÇAMENTO →',
         href: 'https://wa.me/5584994785695?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.',
+      },
+      {
+        glyph: 'IG',
+        tag: 'INSTAGRAM',
+        title: 'DIRECT NO INSTAGRAM',
+        desc: 'Prefere por lá? Envie um direct para @keisodev e peça seu orçamento.',
+        label: 'ABRIR DIRECT →',
+        href: 'https://ig.me/m/keisodev',
       },
       {
         glyph: '@',
@@ -254,8 +254,21 @@ function initThemeToggle() {
   });
 }
 
+function syncHeaderHeightVar() {
+  const header = document.querySelector('.tv-bar');
+  if (!header) return;
+
+  const update = () => {
+    document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+  };
+
+  update();
+  window.addEventListener('resize', update);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
+  syncHeaderHeightVar();
 
   document.querySelectorAll('.shelf-section').forEach((section) => {
     const key = section.dataset.shelf;
