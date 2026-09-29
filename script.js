@@ -4,10 +4,10 @@
  */
 const CONFIG = {
   taglines: [
-    'APRIMORANDO SPRING BOOT NA PRÁTICA',
-    'DESENVOLVENDO EM JAVA TODOS OS DIAS',
+    'DESENVOLVENDO DIA APÓS DIA',
     'FORMAÇÃO TÉCNICA EM DESENVOLVIMENTO DE SOFTWARE',
-    'FOCO EM PROJETOS REAIS, NÃO SÓ EXERCÍCIOS',
+    'SOLUCIONANDO PROBLEMAS REAIS',
+    'TODOS OS CAMINHOS TE LEVAM À INOVAÇÃO',
   ],
 
   shelves: {
@@ -15,16 +15,40 @@ const CONFIG = {
       {
         glyph: '01',
         tag: 'HTML / CSS / JS',
-        title: 'PORTFOLIO.EXE',
-        desc: 'O portfólio que você está vendo agora — neo-brutalismo com estética de TV de tubo, construído do zero.',
+        title: 'ÓTICAS GOMES',
+        desc: 'Website desenvolvido para as Óticas Gomes - RN',
+        label: 'VER WEBSITE →',
+        href: 'httPS://kkjkeiso.github.io/oticas-gomes'
+      },
+      {
+        glyph: '02',
+        tag: 'HTML / CSS / JS',
+        title: 'PORTFOLIO',
+        desc: 'Portfólio de design neo-brutalism com estética de TV de tubo.',
         label: 'VER CÓDIGO →',
         href: 'https://github.com/kkjkeiso/kkjkeiso.github.io',
       },
       {
-        glyph: '??',
+        glyph: '03',
+        tag: 'JAVASCRIPT',
+        title: 'THERMINAL RPG',
+        desc: 'Forje sua própria aventura em um RPG de terminal!',
+        label: 'VER CÓDIGO →',
+        href: 'https://github.com/kkjkeiso/therminal-rpg',
+      },
+      {
+        glyph: '04',
+        tag: 'HTML / CSS / JS',
+        title: 'ASSEGURA LINK',
+        desc: 'Ferramenta web para verificação de segurança de links.',
+        label: 'VER CÓDIGO →',
+        href: 'https://github.com/kkjkeiso/assegura-link',
+      },
+      {
+        glyph: '05',
         tag: 'EM PRODUÇÃO',
-        title: 'PRÓXIMA FITA',
-        desc: 'Novo projeto em produção. Disponível em breve.',
+        title: 'PHASE',
+        desc: 'Plataforma Heurística de Avaliação, Suporte e Educação.',
         label: 'EM BREVE',
         disabled: true,
       },
@@ -40,12 +64,36 @@ const CONFIG = {
 
     redes: [
       {
+        glyph: 'In',
+        tag: 'PERFIL',
+        title: 'LINKEDIN',
+        desc: 'Keyrrison Costa — experiência, projetos e serviços de desenvolvimento web.',
+        label: 'SEGUIR →',
+        href: 'https://www.linkedin.com/in/keyrrison-costa-07901638a/',
+      },
+      {
         glyph: 'GH',
         tag: 'PERFIL',
         title: 'GITHUB',
         desc: '@kkjkeiso — repositórios, contribuições e histórico de desenvolvimento.',
         label: 'SEGUIR →',
         href: 'https://github.com/kkjkeiso',
+      },
+      {
+        glyph: 'IG',
+        tag: 'PERFIL',
+        title: 'INSTAGRAM',
+        desc: '@keisodev — projetos, bastidores e o dia a dia como desenvolvedor.',
+        label: 'SEGUIR →',
+        href: 'https://www.instagram.com/keisodev/',
+      },
+      {
+        glyph: 'X',
+        tag: 'PERFIL',
+        title: 'X',
+        desc: '@kkjkeiso — código, tecnologia e o que estou construindo.',
+        label: 'SEGUIR →',
+        href: 'https://x.com/kkjkeiso',
       },
       {
         glyph: '??',
@@ -59,20 +107,20 @@ const CONFIG = {
 
     contato: [
       {
-        glyph: '@',
-        tag: 'E-MAIL',
-        title: 'FALA COMIGO',
-        desc: 'Para propostas de projeto, oportunidades freelance ou contato profissional.',
-        label: 'ENVIAR E-MAIL →',
-        href: 'mailto:keiso.developer@icloud.com',
+        glyph: 'WA',
+        tag: 'WHATSAPP',
+        title: 'WHATSAPP',
+        desc: 'Resposta mais rápida. Peça seu orçamento de site ou sistema por aqui.',
+        label: 'ORÇAMENTO →',
+        href: 'https://wa.me/5584994785695?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.',
       },
       {
-        glyph: '??',
-        tag: 'EM BREVE',
-        title: 'OUTRO CANAL',
-        desc: 'Espaço reservado para outro canal de contato, como WhatsApp.',
-        label: 'EM BREVE',
-        disabled: true,
+        glyph: '@',
+        tag: 'E-MAIL',
+        title: 'E-MAIL',
+        desc: 'Para propostas, parcerias e orçamentos com mais detalhes.',
+        label: 'ENVIAR E-MAIL →',
+        href: 'mailto:keiso.developer@icloud.com?subject=Or%C3%A7amento',
       },
     ],
   },
