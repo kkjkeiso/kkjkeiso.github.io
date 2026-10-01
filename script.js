@@ -14,7 +14,7 @@ const CONFIG = {
         title: 'ÓTICAS GOMES',
         desc: 'Website desenvolvido para as Óticas Gomes - RN',
         label: 'VER WEBSITE →',
-        href: 'https://kkjkeiso.github.io/oticas-gomes'
+        href: 'https://oticasgomesrn.com.br'
       },
       {
         glyph: '02',
